@@ -1,0 +1,37 @@
+Terms of Service
+
+By using the GitBook (gitbook.com) website ("Service"), you are agreeing to be bound by the following terms and conditions ("Terms of Service"). If you are entering into this agreement on behalf of a company or other legal entity, you represent that you have the authority to bind such entity, its affiliates and all users who access our services through your account to these terms and conditions, in which case the terms "you" or "your" shall refer to such entity, its affiliates and users associated with it. if you do not have such authority, or if you do not agree with these terms and conditions, you must not accept this agreement and may not use the services.
+GitBook (gitbook.com) is owned by GitBook Inc.
+
+GitBook Inc.
+Email: contact@gitbook.com
+
+GitBook reserves the right to update and change the Terms of Service from time to time without notice. Any new features that augment or enhance the current Service, including the release of new tools and resources, shall be subject to the Terms of Service. Continued use of the Service after any such changes shall constitute your consent to such changes. You can review the most current version of the Terms of Service at any time at: https://www.gitbook.com/terms
+Violation of any of the terms below will result in the termination of your Account. While GitBook prohibits such conduct and Content on the Service, you understand and agree that GitBook cannot be responsible for the Content posted on the Service and you nonetheless may be exposed to such materials. You agree to use the Service at your own risk.
+Account Terms
+You must be a human, bots are not allowed
+You must be 10 years or older to use this Service.
+You must provide a valid email address (as email).
+You are responsible for maintaining the security of your account and password.
+You are responsible for all Content posted and activity that occurs under your account (even when Content is posted by others who have accounts under your account).
+One person may not maintain more than one free account.
+You may not use the Service for any illegal or unauthorized purpose. You must not, in the use of the Service, violate any laws in your jurisdiction
+Your use of the Service is at your sole risk
+You must not modify, adapt or hack the Service
+Copyright and Content Ownership
+
+The design (Images, Html, Css, Javascript) is copyright ©2012 GitBook, You may not duplicate, copy, or reuse any portion of the HTML/CSS, Javascript, or visual design elements or concepts without express written permission from GitBook.
+Your profile and materials uploaded remain yours.
+Files edited and linked to your account remain yours
+GitBook have the right (but not the obligation) in their sole discretion to refuse or remove any Content that is available via the Service.
+Cancellation and Termination
+
+You have the right to cancel your account
+You are solely responsible for properly canceling your account.
+All of your Content will be immediately deleted from the Service upon cancellation. This information can not be recovered once your account is cancelled.
+Orders
+
+No re-fund on orders will be done.
+Questions
+
+Any questions about this document should be addressed to the support
