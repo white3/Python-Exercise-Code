@@ -1,5 +1,8 @@
 # coding=utf-8
-# 旋转数组
+# 数组顺序后动
+def move(array,m):
+    return array[-m:]+array[0:len(array)-m]
+# 数组顺序前移
 def rotateArray(arr=[],n=0):
     swap(arr,n,len(arr)-1)
     swap(arr,0,n-1)
@@ -13,3 +16,4 @@ def swap(arr=[],low=0,high=None):
         low+=1;high-=1
 
 print rotateArray([1,2,3,4,5,6,7,8,9],6)
+print move([1,2,3,4,5,6,7,8,9],3)

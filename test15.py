@@ -10,3 +10,15 @@ for num in range(1,1001):
             sum+=primeFactor
     if(num==sum):
         print num,primeFactorList
+def get_sum_prime(low,high):
+    for num in xrange(low,high):
+        primeList = []
+        sum = 0
+        for prime in xrange(1,num):
+            if num%prime==0:
+                primeList.append(prime)
+                sum+=prime
+        if num==sum:
+            print sum,primeList
+            
+get_sum_prime(7,400)
