@@ -23,4 +23,14 @@ def print_YH_Triangle(n):
         for j in xrange(i-1,0,-1):
             an[j]+=an[j-1]
         print "\t".join(map(lambda x:str(x),an[0:i+1]))
-print_YH_Triangle(10)
+def print_YH_TriangleDemo(low, high):
+    an = [1]*high
+    for i in xrange(low-1):
+        for j in xrange(i-1,0,-1):
+            an[j]+=an[j-1]
+    for i in xrange(low-1,high):
+        for j in xrange(i-1,0,-1):
+            an[j]+=an[j-1]
+        print "\t".join(map(lambda x:str(x),an[0:i+1]))
+print_YH_Triangle(6)
+print_YH_TriangleDemo(4,6)
