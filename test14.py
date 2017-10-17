@@ -32,7 +32,7 @@ for i in xrange(0,len(num_list)-1):out += str(num_list[i])+" * "
 out += str(num_list[len(num_list)-1])
 print out
 #-----------------------输出优化----------------------
-print n , "=", " * ".join(map(lambda x:str(x),num_list))
+print n , "=", " * ".join(map(lambda x:str(x),get_factorization_intoprimes(n)))
 #---------------------------------------------------
 def getMaxRangePrimeNumList(maxNum):
     result=[]
