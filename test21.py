@@ -23,6 +23,7 @@ def print_YH_Triangle(n):
         for j in xrange(i-1,0,-1):
             an[j]+=an[j-1]
         print "\t".join(map(lambda x:str(x),an[0:i+1]))
+        
 def print_YH_TriangleDemo(low, high):
     an = [1]*high
     for i in xrange(low-1):
