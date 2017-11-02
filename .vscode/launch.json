@@ -1,0 +1,35 @@
+{
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "Python",
+                "type": "python",
+                "request": "launch",
+                "stopOnEntry": true,
+                "pythonPath": "${config:python.pythonPath}",
+                "program": "${file}",
+                "cwd": "${workspaceRoot}",
+                "env": {},
+                "envFile": "${workspaceRoot}/.env",
+                "debugOptions": [
+                    "WaitOnAbnormalExit",
+                    "WaitOnNormalExit",
+                    "RedirectOutput"
+                ]
+            },
+            {
+                "name": "(gdb) Pipe Attach",
+                "type": "cppdbg",
+                "request": "attach",
+                "program": "enter program name, for example ${workspaceRoot}/a.exe",
+                "processId": "${command:pickRemoteProcess}",
+                "pipeTransport": {
+                    "debuggerPath": "/usr/bin/gdb",
+                    "pipeProgram": "<full path to pipe program such as plink.exe>",
+                    "pipeArgs": [],
+                    "pipeCwd": ""
+                },
+                "MIMode": "gdb"
+            }
+        ]
+    }

@@ -7,16 +7,17 @@
 def swap(arr, i, j): arr[i],arr[j]=arr[j],arr[i]
 def permutationStr(str):
     result = []
-    def permutation(chars, begin):
+    def permutationDao(chars, begin):
         if begin==len(chars):result.append(''.join(chars))
         for i in xrange(begin, len(chars)):
             swap(chars ,i ,begin)
-            permutation(chars, begin+1)
+            permutationDao(chars, begin+1)
             swap(chars ,begin ,i)
-    permutation([x for x in str], 0)
+    permutationDao([x for x in str], 0)
     result = map(lambda x: x,set(result))
     return ' '.join(result),len(result)
 print permutationStr('alllll')
+print "----------------------------------------------------------------------------------------"
 # 打印组合 combination 情况： "a" "b" "c" "ab" "ac" "bc" "abc"
 # 24.字符串全组合问题
 def combinationStr(str):
@@ -34,7 +35,7 @@ def combinationStr(str):
         combinationStrDao(strLen, 0, i)
     return result
 print combinationStr('abc')
-
+print "----------------------------------------------------------------------------------------"
 # 原始字符串是"abc"，打印得到下列所有排列组合情况
 # "a" "b" "c"
 # "ab" "bc" "ca" "ba" "cb" "ac"
@@ -51,17 +52,18 @@ print combinationStr('abc')
 # 返回;
 # 4、遍历新集合重复 3 步骤
 def permComStr(str):
-    result = []
-    temp = []
-    def combinationStrDao(ch, pos, num):
-        if num==0:result.append(''.join(temp));return;
-        if pos==len(ch):return
-        temp.append(ch[pos])
-        combinationStrDao(ch, pos+1, num-1)
-        temp.pop(len(temp)-1)
-        combinationStrDao(ch, pos+1, num)
-    strLen = [x for x in str]
-    for i in xrange(1,len(strLen)+1):
-        combinationStrDao(strLen, 0, i)
-    return result
-print combinationStr('abc')
+    strMap = {}
+    def getDeriveList(List):
+        result = []
+        for i in List:
+            for j in str:
+                if i.find(j)==-1:result.append(i+j);
+        return result
+    strList = [x for x in str]
+    strMap[0] = strList
+    for i in xrange(1,len(str)):
+        strList = getDeriveList(strList)
+        strMap[i] = strList
+    return strMap
+print permComStr('abcd')
+print "----------------------------------------------------------------------------------------"
