@@ -1,5 +1,5 @@
 ## primePythonCode
-```json
+```
 test 0:30 {
     0.有限排列问题,
     1.斐波那契数列,
